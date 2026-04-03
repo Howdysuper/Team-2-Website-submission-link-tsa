@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css?v=4">
+  <link rel="stylesheet" href="css/menu.css?v=4">
+    <title>Suggest</title>
+</head>
+<body>
+    
+
+  <div class="navbar">
+  
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">☰</label>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="suggest.html">Share</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="reference.html">Reference</a></li>
+    </ul>
+</div>
+
+<div class="container-submit">
+
+
+   <div class="header-row">
+       <h1>Share a Resource</h1>
+   </div>
+   <p id="message"></p>
+
+
+
+   <form id="resourceForm">
+
+
+       <div class="form-row">
+           <div class="form-group">
+               <label>Your Name </label>
+               <input type="text" id="contactName" placeholder="Enter Your Name" required>
+           </div>
+
+
+           <div class="form-group">
+               <label>Your Email </label>
+               <input type="email" id="contactEmail" placeholder="Enter Your Email" required>
+           </div>
+       </div>
+
+
+
+
+       <div class="form-row">
+           <div class="form-group">
+               <label>Resource Title</label>
+               <input type="text" id="resourceTitle" placeholder="Name of Resource" required>
+           </div>
+
+
+           <div class="form-group">
+               <label>Resource Link</label>
+               <input type="url" id="resourceLink" placeholder="Link to Resource" >
+           </div>
+       </div>
+        <!-- Row 4: Category + Description -->
+<div class="dropdown-wrapper">
+    <label>Category</label>
+    <div class="selected">
+        <span>Select one</span>
+        <span class="dropdown-arrow">▼</span>
+    </div>
+    <ul class="dropdown-list">
+        <li class="dropdown-item">Wellness Resources</li>
+        <li class="dropdown-item">Food Assistance</li>
+        <li class="dropdown-item">Education</li>
+        <li class="dropdown-item">Senior Support</li>
+        <li class="dropdown-item">Residential & Transitional Support</li>
+        <li class="dropdown-item">Mental Health Support</li>
+        <li class="dropdown-item">Family & Child Services</li>
+        <li class="dropdown-item">Community & Volunteer Programs</li>
+        <li class="dropdown-item">Housing Assistance</li>
+        
+    </ul>
+</div>
+
+
+
+
+
+       <div class="form-group full">
+           <label>Resource Description</label>
+           <textarea id="resourceDesc" rows="5" placeholder="Briefly Describe the Resource" required></textarea>
+       </div>
+
+
+       <button type="submit" class="submit-btn">Submit →</button>
+       <p id="message"></p>
+
+
+   </form>
+</div>
+
+
+<footer class="site-footer">
+  <div class="site-footer-container">
+
+    <div class="site-footer-left">
+      <div class="site-footer-links">
+        <a href="index.html">Home</a>
+        <a href="resources.html">Resources</a>
+        <a href="suggest.html">Share</a>
+        <a href="training.html">Training</a>
+        <a href="reference.html">Reference</a>
+      </div>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+    
+</body>
+</html>

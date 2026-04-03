@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/menu.css?v=2">
+    <title>Resources</title>
+</head>
+<body>
+
+
+
+   <div class="navbar">
+      
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">☰</label>
+  
+      <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="suggest.html">Share</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="reference.html">Reference</a></li>
+   
+      </ul>
+  </div>
+    
+<section class="resources-section">
+
+    <div class="container container-resources" id="resourcesList">
+         <h2 class="section-title-resources">Resources</h2>
+
+         <!-- Search and Filter UI -->
+         <div class="filter-bar">
+            <input 
+                class="search" 
+                type="text" 
+                id="searchInput" 
+                placeholder="Search resources..."
+            />
+          <div class="dropdown-wrapper">
+  <div class="selected">
+    Choose County <span class="dropdown-arrow">▼</span>
+  </div>
+  <div class="dropdown-list">
+   <div class="dropdown-item" data-value="all">All Counties</div>
+    <div class="dropdown-item" data-value="Davidson">Davidson</div>
+    <div class="dropdown-item" data-value="Williamson">Williamson</div>
+    <div class="dropdown-item" data-value="Rutherford">Rutherford</div>
+    <div class="dropdown-item" data-value="Knox">Knox</div>
+    <div class="dropdown-item" data-value="Sumner">Sumner</div>
+  </div>
+</div>
+
+
+            <div id="filterButtons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="health">Wellness Resources</button>
+                <button class="filter-btn" data-filter="food">Food Assistance</button>
+                <button class="filter-btn" data-filter="education">Education</button>
+                <button class="filter-btn" data-filter="senior">Senior Support</button>
+                <button class="filter-btn" data-filter="shelter">Residential & Transitional Support</button>
+                <button class="filter-btn" data-filter="mental">Mental Health <br>Support</button>
+                <button class="filter-btn" data-filter="family">Family & Child <br>Services</button>
+                <button class="filter-btn" data-filter="volunteer">Community & Volunteer Programs</button>
+                <button class="filter-btn" data-filter="housing">Housing Assistance</button>
+            </div>
+         </div>
+
+
+
+
+       <div class="class-wrapper">
+           <ul class="card-list list">
+               
+
+               <!-- HEALTH-->
+               <li class="card-item" data-category="health" data-county="Davidson County">
+                    <a href="https://www.alivehospice.org/" class="card-link"> 
+                       <img src="images/health.png" alt="Alive Hospice" class="card-image">
+                       <div class="card-content">
+                       <p class="badge health">Wellness Resource</p>
+                       <h3 class="card-name name">Alive Hospice</h3>
+                        <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        <span class="info-text">1718 Patterson Street Nashville, TN 37203</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        <span class="info-text">info@alivehospice.org</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        <span class="info-text">(615) 327-1085</span>
+                     </p>
+                       </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               <li class="card-item" data-category="health" data-county="Knox County">
+                    <a href="https://www.knoxcounty.org/health/" class="card-link"> 
+                       <img src="images/health.png" alt="Alive Hospice" class="card-image">
+                       <div class="card-content">
+                       <p class="badge health">Wellness Resource</p>
+                       <h3 class="card-name name">Knox County Health Department</h3>
+                  
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        <span class="info-text">140 Dameron Ave, Knoxville, TN 3791</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        <span class="info-text">health@knoxcounty.org</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        <span class="info-text">(865) 215-5000</span>
+                     </p>
+                        </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+
+
+               <!-- EDU -->
+               <li class="card-item" data-category="education" data-county="Davidson County">
+                    <a href="https://pencilforschools.org/" class="card-link"> 
+                       <img src="images/education.png" alt="Pencil Foundation" class="card-image">
+                       <div class="card-content">
+                       <p class="badge education">Education</p>
+                       <h3 class="card-name name">Pencil Foundation</h3>
+                        
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        <span class="info-text">199 Cockrill Bend Blvd</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        <span class="info-text">info@pencil615.org</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        <span class="info-text">(615) 988-4928</span>
+                     </p>
+                       </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+
+
+               <li class="card-item" data-category="education" data-county="Williamson County">
+                     <a href="https://www.maryleebunch.com/" class="card-link"> 
+                       <img src="images/education.png" alt="Mary Lee Bunch Associates" class="card-image">
+                       <div class="card-content">
+                       <p class="badge education">Education</p>
+                       <h3 class="card-name name">Mary Lee Bunch Associates</h3>
+                        
+                       
+                     <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        <span class="info-text">7113 Peach Ct, Suite 111, Brentwood, TN 37027</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        <span class="info-text">info@maryleebunch.com</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        <span class="info-text">(615) 377-6370</span>
+                     </p>
+                     </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>        
+               <!-- CHILD & FAMILY SUPPORT-->
+                               <li class="card-item" data-category="family" data-county="Rutherford County">
+                     <a href="tncasa.org" class="card-link"> 
+                       <img src="images/family.png" alt="TN Voices" class="card-image">
+                       <div class="card-content">
+                       <p class="badge family">Family & Child Service</p>
+                       <h3 class="card-name name">Kid Central TN</h3>
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        <span class="info-text">745 South Church Street, Suite 401, Murfreesboro, TN 37130</span>   
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        <span class="info-text">kid.central@tn.gov</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        <span class="info-text">(615) 220-3990</span>
+                     </p>
+
+                        </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               <li class="card-item" data-category="family" data-county="Davidson County">
+                     <a href="tnchildren.org" class="card-link"> 
+                       <img src="images/family.png" alt="TN Allicance" class="card-image">
+                       <div class="card-content">
+                       <p class="badge family">Family & Child Service</p>
+                       <h3 class="card-name name">TN Alliance</h3>
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        <span class="info-text">525 Royal Parkway PO Box 292734, Nashville, TN 37229</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        <span class="info-text">admin@tnchildren.org</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        <span class="info-text">(615) 788-1555</span>
+                     </p>
+
+                        </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               <!-- FOOD -->
+               <li class="card-item" data-category="food" data-county="Davidson County"> 
+                    <a href="https://thestore.org/" class="card-link"> 
+                       <img src="images/food_assistance.png" alt="The Store" class="card-image">
+                       <div class="card-content">
+                       <p class="badge food">Food Assistance</p>
+                       <h3 class="card-name name">The Store</h3>
+                        <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        <span class="info-text">2009 12th Avenue South, Nashville, TN 37204</span>
+                     </p>
+
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        <span class="info-text">info@thestore.org</span>
+                     </p>
+
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        <span class="info-text">(615) 460-8331</span>
+                     </p>
+                       </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               <li class="card-item" data-category="food" data-county="Williamson County">
+                    <a href="https://www.graceworkstn.org/" class="card-link"> 
+                       <img src="images/food_assistance.png" alt ="Graceworks" class="card-image">
+                       <div class="card-content">
+                       <p class="badge food">Food Assistance</p>
+                       <h3 class="card-name name">GraceWorks Ministries</h3>
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        <span class="info-text">104 Southeast Pkwy, Franklin, TN 37064</span>
+                     </p>
+
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        <span class="info-text">info@graceworkstn.org</span>
+                     </p>
+
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        <span class="info-text">(615) 794-9055</span>
+                     </p>
+
+                       </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                       </a>
+               </li>
+
+               
+
+               <!-- SHELTER -->
+               <li class="card-item" data-category="shelter" data-county="Davidson County"> 
+                    <a href="https://safehaven.org/" class="card-link"> 
+                       <img src="images/shelter.png" alt="Card Img" class="card-image">
+                       <div class="card-content">
+                       <p class="badge shelter">Residential & Transitional Support</p>
+                       <h3 class="card-name name">Safe Haven</h3>
+                        <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        <span class="info-text">1234 3rd Avenue South, Nashville, TN 37210</span>
+                     </p>
+
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        <span class="info-text">info@safehaven.org</span>
+                     </p>
+
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        <span class="info-text">(615) 256-8195</span>
+                     </p>
+
+                       </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               <li class="card-item" data-category="shelter" data-county="Rutherford County">
+                    <a href="https://lovegodservepeople.org/" class="card-link"> 
+                       <img src="images/shelter.png" alt="Card Img" class="card-image">
+                       <div class="card-content">
+                       <p class="badge shelter">Residential & Transitional Support</p>
+                       <h3 class="card-name name">Matthew 25</h3>
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        <span class="info-text">1207 Old Salem Road, Murfreesboro, TN 37129</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        <span class="info-text">LCouser@LoveGodServePeople.org</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        <span class="info-text">(615) 809-2644</span>
+                     </p>                       
+                  </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+
+               <!--SENIOR -->
+               <li class="card-item" data-category="senior" data-county="Davidson County"> 
+                    <a href="https://agewelltn.org/" class="card-link"> 
+                       <img src="images/seniors_support.png" alt="Card Img" class="card-image">
+                       <div class="card-content">
+                       <p class="badge senior">Senior Support</p>
+                       <h3 class="card-name name">Age Well</h3>
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        <span class="info-text">3511 Belmont Blvd. Nashville, TN 37215</span>
+                     </p>
+
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        <span class="info-text">info@agewelltn.org</span>
+                     </p>
+
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        <span class="info-text">(615) 353-4235</span>
+                     </p>                       
+                  </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               <li class="card-item" data-category="senior" data-county="Williamson County"> 
+                    <a href="https://fiftyforward.org/" class="card-link"> 
+                       <img src="images/seniors_support.png" alt="Card Img" class="card-image">
+                       <div class="card-content">
+                       <p class="badge senior">Senior Support</p>
+                       <h3 class="card-name name">Fifty Forward</h3>
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        <span class="info-text">960 Heritage Way, Brentwood, TN 37027</span>
+                     </p>
+
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        <span class="info-text">info@fiftyforward.org</span>
+                     </p>
+                     
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        <span class="info-text">(615) 376-0102</span>
+                     </p>                      
+                   </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               <li class="card-item" data-category="mental" data-county="Sumner County">
+                     <a href="https://namitn.org/?utm_source=chatgpt.com" class="card-link"> 
+                       <img src="images/mental_health.png" alt="NAMI" class="card-image">
+                       <div class="card-content">
+                       <p class="badge mental">Mental Health Support</p>
+                       <h3 class="card-name name">NAMI Tennessee</h3>
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        <span class="info-text">131 Sanders Ferry Rd. Suite B, Hendersonville, TN 37075</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        <span class="info-text">info@namitn.org</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        <span class="info-text">(615) 361-6608</span>
+                     </p>
+
+                        </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               <li class="card-item" data-category="mental" data-county="Sumner County">
+                     <a href="https://tnvoices.org/" class="card-link"> 
+                       <img src="images/mental_health.png" alt="TN Voices" class="card-image">
+                       <div class="card-content">
+                       <p class="badge mental">Mental Health Support</p>
+                       <h3 class="card-name name">TN Voices</h3>
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        <span class="info-text">805 Meadowlark Lane, Goodlettsville, TN 37072</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        <span class="info-text">press@tnvoices.org</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        <span class="info-text">(615) 269-7751</span>
+                     </p>
+
+                        </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               
+               <!-- VOLUNTEER-->
+                               
+               <li class="card-item" data-category="volunteer" data-county="Davidson County">
+                     <a href="https://handson.unitedwaygreaternashville.org/" class="card-link"> 
+                       <img src="images/community.png" alt="Hands On" class="card-image">
+                       <div class="card-content">
+                       <p class="badge volunteer">Community & Volunteer Programs</p>
+                       <h3 class="card-name name">Hands On Nashville</h3>
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        <span class="info-text">2525 Perimeter Place Drive, Suite 121, Nashville, TN 37214</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        <span class="info-text">handson@unitedwaygn.org</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        <span class="info-text">(615) 298-1108</span>
+                     </p>
+
+                        </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               
+               <li class="card-item" data-category="volunteer" data-county="Knox County">
+                     <a href="https://www.volunteeretn.org/" class="card-link"> 
+                       <img src="images/community.png" alt="Voulunteer East Tennessee" class="card-image">
+                       <div class="card-content">
+                       <p class="badge volunteer">Community & Volunteer Programs</p>
+                       <h3 class="card-name name">Voulunteer East Tennessee</h3>
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        <span class="info-text">1301 Hannah Avenue, Knoxville, TN 37921</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        <span class="info-text">info@VolunteerETN.org</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        <span class="info-text">(865) 582-4085</span>
+                     </p>
+
+                        </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+               <!-- HOUSING -->
+               <li class="card-item" data-category="housing" data-county="Davidson County">
+                     <a href="http://nashvillecares.org/" class="card-link"> 
+                       <img src="images/housing_assistance.png" alt="Nashville CARES" class="card-image">
+                       <div class="card-content">
+                       <p class="badge housing">Housing Assistance</p>
+                       <h3 class="card-name name">Nashville CARES</h3>
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        <span class="info-text">633 Thompson Lane, Nashville, TN 37204</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        <span class="info-text">info@nashvillecares.org</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        <span class="info-text">(615) 259-4866</span>
+                     </p>
+
+                        </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>
+                              <li class="card-item" data-category="housing" data-county="Sumner County">
+                     <a href="https://www.habitatsumnercounty.org/" class="card-link"> 
+                       <img src="images/housing_assistance.png" alt="Habitat For Humanity of Sumner County" class="card-image">
+                       <div class="card-content">
+                       <p class="badge housing">Housing Assistance</p>
+                       <h3 class="card-name name">Habitat For Humanity of Sumner County</h3>
+                       <p>
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        <span class="info-text">327 Sumner Hall Drive, Gallatin, TN 37066</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">mail</span>
+                        <span class="info-text">info@habitatsumnercounty.org</span>
+                     </p>
+                     <p>
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        <span class="info-text">(615) 452-9606</span>
+                     </p>
+
+                        </div>
+                       <button class="card-button material-symbols-outlined">arrow_forward</button>
+                    </a>
+               </li>                
+            </ul>
+            
+            
+   </div>
+</section>
+
+
+  
+<footer class="site-footer">
+  <div class="site-footer-container">
+
+    <div class="site-footer-left">
+      <div class="site-footer-links">
+        <a href="index.html">Home</a>
+        <a href="resources.html">Resources</a>
+        <a href="suggest.html">Share</a>
+        <a href="training.html">Training</a>
+        <a href="reference.html">Reference</a>
+      </div>
+    </div>
+
+</footer>
+
+
+
+<!-- List.js library for search and filter -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+<script src="script.js"></script>
+
+   
+</body>
+</html>

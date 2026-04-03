@@ -1,0 +1,71 @@
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    display: none; 
+}
+
+#check {
+    display: none; 
+}
+
+
+@media (max-width: 858px) {
+
+    .checkbtn {
+        display: block;
+        font-size: 28px;
+        color: #DD7230;
+        padding: 20px;
+    }
+
+    .navbar ul {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: #DD7230;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0;        /* reset desktop padding */
+        margin: 0;         /* reset any margin */
+        gap: 30px;
+
+        transition: left 0.4s ease;
+        box-sizing: border-box;
+
+    }
+
+    .navbar ul li {
+    width: 70%;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+.navbar ul li:last-child {
+    border-bottom: none; /* removes line under last item */
+}
+
+
+    .navbar ul li a {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
